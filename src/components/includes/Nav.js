@@ -12,7 +12,7 @@ import styled from "styled-components";
             <Leftcontainer>
                 <TagContainer>
                     <TagName>a</TagName>
-                    <Heading>arifeen.</Heading>
+                    <Heading>arifeen</Heading>
                 </TagContainer>
                 
                 <ListTagItem>
@@ -52,8 +52,37 @@ import styled from "styled-components";
                 </ImageButton>
                 <LinkName>Request</LinkName> 
                 </LinkItems>
-                
                 </ListTagItem>
+                <ListMainItem>
+                    <ListMain>
+                        <ImageButtonTag>
+                            <TagImages src={require("../../assets/images/Property 1=camera.svg").default} alt="Image"/>
+                        </ImageButtonTag>
+                        <TagNames>Picture</TagNames>
+                    </ListMain>
+                    <ListMain>
+                        <ImageButtonTag>
+                            <TagImages src={require("../../assets/images/Property 1=vedio.svg").default} alt="Image"/>
+                        </ImageButtonTag>
+                        <TagNames>Videos</TagNames>
+                    </ListMain>
+                    <ListMain>
+                        <ImageButtonTag>
+                            <TagImages src={require("../../assets/images/Property 1=note.svg").default} alt="Image"/>
+                        </ImageButtonTag>
+                        <TagNames>Documents</TagNames>
+                    </ListMain>
+                    <ListMain>
+                        <ImageButtonTag>
+                            <TagImages src={require("../../assets/images/Property 1=sign.svg").default} ait="Image"/>
+                        </ImageButtonTag>
+                        <TagNames>Signed</TagNames>
+                    </ListMain>
+                </ListMainItem>
+                <Button>
+                    <LogoButton>Add Droplet</LogoButton>
+                    <LogoButton>Add Droplet</LogoButton>
+                </Button>
                 
             </Leftcontainer>
             
@@ -94,7 +123,7 @@ import styled from "styled-components";
     `;
       const Leftcontainer=styled.div`
       width:15%;
-      height:500px;
+      height:750px;
       background-color:#1B1C30;
       padding-left:20px;
       `;
@@ -129,6 +158,7 @@ import styled from "styled-components";
     
     border-radius:8px;
     margin-left: 11px;
+    background-color:#67636F;
     `;
       const LinkImage=styled.img`
       `;
@@ -137,6 +167,30 @@ import styled from "styled-components";
       font-family:'dm_sansregular';
       margin-left: 5px;
       `;
+      const ListMainItem=styled.div`
+        padding-top:40px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-between;`;
+      const ListMain=styled.div`
+         width:45%;`;
+      const ImageButtonTag=styled.button`
+       border-radius:8px;
+       margin-left: 11px;
+       background-color:#67636F;
+    `;
+      const TagImages=styled.img`
+      width:100%;
+      display:flex;
+      `;
+      const TagNames= styled.p`
+      font-size:15px;
+      font-family:'dm_sansregular';
+      margin-left: 5px;
+      `;
+      const Button=styled.div``;
+      const LogoButton=styled.button``;
+
     const HeaderContainer=styled.div`
     width:80%;
     display:flex;
@@ -159,7 +213,7 @@ import styled from "styled-components";
      width: 5%;
     display: block;
     margin-right: 445px;
-    margin-bottom: 393px;
+    margin-bottom: 652px;
    
    
    `;
@@ -169,11 +223,11 @@ import styled from "styled-components";
   
    `;
     const StateImage=styled.img`
-     width: 5%;  
+     width: 7%;  
     display: flex;
     border-radius: 50%;
     margin-right: 77px;
-    margin-bottom: 426px;
+    margin-bottom: 670px;
    `;
     const StateName=styled.p`
     font-size:10px;
@@ -188,7 +242,7 @@ import styled from "styled-components";
      margin-right:10px;
     display:flex;
     width: 24px;
-    margin-bottom: 424px;
+    margin-bottom: 670px;
    
     `;
     
@@ -207,11 +261,11 @@ import styled from "styled-components";
      width:30%;
     display: flex;
     
-    margin-bottom: 425px;`;
+    margin-bottom: 670px;`;
     const BellImage=styled.img`
      width:30%;
     display: flex;
-    margin-bottom: 425px;`;
+    margin-bottom: 670px;`;
     const Right=styled.div`
     width: 10%;
     padding-right:20px;
@@ -222,13 +276,13 @@ import styled from "styled-components";
       width:50%;
     display: flex;
     border-radius: 50%;
-    margin-bottom: 425px;
+    margin-bottom: 670px;
     `;
     const TagImage=styled.img`
      width:20%;
     display: flex;
     margin-right: 62px;
-    margin-bottom:400px;
+    margin-bottom:670px;
     `;
   
    
