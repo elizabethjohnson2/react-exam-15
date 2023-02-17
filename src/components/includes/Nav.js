@@ -183,6 +183,7 @@ import {Link} from"react-router-dom";
       font-size:15px;
       font-family:'dm_sansregular';
       margin-left: 5px;
+      color:#727488;
       `;
       const ListMainItem=styled.div`
         padding-top:40px;
@@ -192,9 +193,14 @@ import {Link} from"react-router-dom";
       const ListMain=styled.div`
          width:45%;`;
       const ImageButtonTag=styled.button`
-       border-radius:8px;
+       /* border-radius:8px;
        margin-left: 11px;
-       background-color:#67636F;
+       background-color:#67636F; */
+    border-radius:8px;
+    margin-left: 11px;
+    background-color:#67636F;
+    height: 57px;
+    width: 59px;
     `;
       const TagImages=styled.img`
       width:100%;
@@ -204,21 +210,24 @@ import {Link} from"react-router-dom";
       font-size:15px;
       font-family:'dm_sansregular';
       margin-left: 5px;
+      color:#727488;
       `;
       const Button=styled.div`
       padding-top:10px;
       display:flex;
       flex-wrap: wrap;
       padding-left:20px;
+      align-items:center;
       `;
       const ButtonLogo=styled.div`
       padding-top:15px;
+    margin-right: 39px;
       `;
       const LogoButton=styled.button`
-      padding:10px 20px;
+      padding:15px 30px;
       border: 1px solid #000;
       border-radius: 18px;
-      height: 36px;
+      height: 42px;
       background-color:#F77958;
       `;
 
