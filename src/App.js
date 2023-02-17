@@ -9,7 +9,7 @@ function App() {
   return (
   <Router>
     <Nav/>
-    <NavBar/>
+    {/* <NavBar/> */}
     
     <Routes>
   <Route/>

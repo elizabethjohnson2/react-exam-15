@@ -5,12 +5,10 @@ import styled from "styled-components";
 export default function NavBar(){
     return(
 
-
-
 <MainContainer>
     <RightContainer>
         <Background>
-            <SideImage/>
+            <SideImage src={require("../../assets/images/Frame 3466680.png").default} alt="image"/>
             <HeadLine>Current Subscription plan</HeadLine>
             <TimeLine>$ 1325.00</TimeLine>
             <SubHeading>Company Plus</SubHeading>
@@ -19,8 +17,8 @@ export default function NavBar(){
         <MainSection>
             <LeftSection>
                 <ImageBar>
-                    <Image1/>
-                    <Image2/>
+                    <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
                 </ImageBar>
                 <HeadName>Python</HeadName>
                 <SubSection>
@@ -31,8 +29,8 @@ export default function NavBar(){
             </LeftSection>
             <RightSection>
             <ImageBar>
-                    <Image1/>
-                    <Image2/>
+                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
+                    <Image2  src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
                 </ImageBar>
                 <HeadName>PHP</HeadName>
                 <SubSection>
@@ -77,8 +75,14 @@ const MainContainer=styled.div`
 const RightContainer=styled.div`
 display:flex;
 justify-content:space-between;
+
 `;
-const Background=styled.div``;
+const Background=styled.div`
+background-color:#fff;
+width:10%;
+height:10px;
+border-radius:2px solid #000;
+`;
 const SideImage=styled.img``;
 const HeadLine=styled.h1``;
 const TimeLine=styled.h5``;

@@ -10,6 +10,7 @@ import {Link} from"react-router-dom";
     return (
         
         <MainContainer>
+            <SectionContainer>
             <Leftcontainer>
                 <TagContainer>
                     <TagName>a</TagName>
@@ -95,7 +96,7 @@ import {Link} from"react-router-dom";
                 <LinkImageContainer>
                 <LogoImage  src={require("../../assets/images/Property 1=serach.svg").default} alt="logo"/>
                 </LinkImageContainer>
-               
+               <Images>
                 <ImageTag>
                 <StateImage src={require("../../assets/images/Component 429.svg").default} alt="Image"/>
                 <StateName>United States</StateName>
@@ -103,9 +104,8 @@ import {Link} from"react-router-dom";
                 <ImageTags>
                 <ArrowImage src={require("../../assets/images/Property 1=arrow.svg").default} alt="Image"/>
                 <ArrowName>87%</ArrowName>
-                </ImageTags>
-                
-                
+                </ImageTags> 
+                </Images>     
             </Left>
             <LineTag></LineTag>
             </InnerBox>
@@ -119,6 +119,73 @@ import {Link} from"react-router-dom";
                 <TagImage src={require("../../assets/images/Property 1=down.svg").default} alt="arrow"/>
             </Right>
         </HeaderContainer>
+        </SectionContainer>
+        <RightContainer>
+        <Background>
+            <OutLetSection>
+           <HeadLine>Current Subscription plan</HeadLine>
+            <TimeLine>$ 1325.00</TimeLine>
+            <SubHeading>Company Plus</SubHeading>
+            <ButtonLag>Change Plan</ButtonLag>
+            </OutLetSection> 
+            <ImageBars>
+            <SideImage src={require("../../assets/images/Frame 3466680.png")} alt="image"/>
+            </ImageBars>
+        </Background>
+        <MainSection>
+            <LeftSection>
+                <ImageBar>
+                    <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
+                </ImageBar>
+                <HeadName>Python</HeadName>
+                <SubSection>
+                <SubName>14 Projects</SubName>
+                <SideName>24GB</SideName>
+                </SubSection>
+
+            </LeftSection>
+            <RightSection>
+            <ImageBar>
+                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
+                    <Image2  src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                </ImageBar>
+                <HeadName>PHP</HeadName>
+                <SubSection>
+                <SubName>21 Projects</SubName>
+                <SideName>24GB</SideName>
+                </SubSection>
+                </RightSection>
+                <BottomLeftSection>
+                <ImageBar>
+                    <Image1/>
+                    <Image2/>
+                </ImageBar>
+                <HeadName>ASP</HeadName>
+                <SubSection>
+                <SubName>19 Projects</SubName>
+                <SideName>24GB</SideName>
+                </SubSection>
+                
+                </BottomLeftSection>
+                <BottomRightSection>
+                <ImageBar>
+                    <Image1/>
+                    <Image2/>
+                </ImageBar>
+                <HeadName>Ruby</HeadName>
+                <SubSection>
+                <SubName>17 Projects</SubName>
+                <SideName>12GB</SideName>
+                </SubSection>
+                </BottomRightSection>
+        </MainSection>
+        <Bottomsection>
+            <MainHeading>Invite 2 friends and get 5GB extra space.</MainHeading>
+            <ButtonTag>Invite Now!</ButtonTag>
+        </Bottomsection>
+    </RightContainer>
+        
        
         </MainContainer>
      
@@ -126,15 +193,14 @@ import {Link} from"react-router-dom";
 }
     const MainContainer=styled.div`
      
-     display:flex;
-     background-color:#212236;
-    
-
-   margin-left: auto;
-    
    
+     background-color:#212236;
+     margin-left: auto; 
     `;
+    const SectionContainer=styled.div`
+     display: flex;`;
       const Leftcontainer=styled.div`
+    
       width:15%;
       height:100vh;
       background-color:#1B1C30;
@@ -239,33 +305,44 @@ import {Link} from"react-router-dom";
     padding:10px;
     `;
     const Left=styled.div`
-    width:20px;
+    width:90%;
+    
     /* margin: 0 auto; */
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     `;
+    
     const InnerBox=styled.div`
+    width:85%;
     `;
     const LineTag=styled.hr`
     border-bottom:1px solid #727488;
-    width: 917px;
+    width: 100%;
     margin-top:20px;
 
     `;
     const LinkImageContainer=styled(Link)`
     padding-right: 500px;
+    width:40px;
     
     `;
     const LogoImage=styled.img`
     display: block;
+    width:100%;
+    /* margin-left:15%; */
+   `;
+   const Images =styled.div`
+   width:20%;
+   display:flex;
+   justify-content:space-between;
    `;
    const ImageTag=styled.div`
    display:flex;
    margin:0 auto;
-   margin-left:200px;
-   
+   /* margin-left:200px; */
+   width:40%;
    align-items:center;
    justify-content:space-between;
   
@@ -274,7 +351,7 @@ import {Link} from"react-router-dom";
    `;
     const StateImage=styled.img`
      width: 100%; 
-     height: 40px; 
+     height: 50%; 
     display: flex;
     border-radius: 50%;
     /* margin-right: 90px; */
@@ -294,7 +371,8 @@ import {Link} from"react-router-dom";
     margin:0 auto;
     align-items:center;
     justify-content:space-between;
-    margin-left:20px;
+    /* margin-left:10px; */
+    width:40%;
    
    
    
@@ -303,6 +381,7 @@ import {Link} from"react-router-dom";
      /* margin-right:10px; */
     display:flex;
     width: 100%;
+    height:60%;
    
     `;
     
@@ -313,7 +392,7 @@ import {Link} from"react-router-dom";
        margin-top: 10px;
     `;
     const Middle=styled.div`
-    width: 8%;
+    width: 10%;
     padding-right:20px;
     display: flex;
     margin-left: 59px;
@@ -349,6 +428,79 @@ import {Link} from"react-router-dom";
     margin-right: 30px;
     
     `;
+   
+    const RightContainer=styled.div`
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    bottom: 0%;
+    height:80px;
+    width:25%;
+    padding-top:200px;
+   
+    
+    `;
+    const Background=styled.div`
+  
+   /* width: 100px; */
+    background:#51459F;
+    display: flex;
+    width:90%;
+    border-radius:30px;
+    /* margin-left: 11px; */
+    padding-left:40px;
+
+
+    `;
+    const OutLetSection=styled.div`
+        height: 200px;
+        width: 100%;
+        margin-left: 5px;
+    `;
+    
+    const HeadLine=styled.h3`
+    font-size:15px;
+    color:#fff;
+    `;
+    const TimeLine=styled.h6`
+    font-size:15px;
+    color:#fff;
+    `;
+    const SubHeading=styled.p`
+    font-size:15px;
+    color:#fff;
+    `;
+    const ButtonLag=styled.button`
+    height: 19%;
+    width: 47%;
+    background-color:#fff;
+    border-radius:10px;
+    `;
+    const ImageBars=styled.div`
+    height:200px;
+    width: 100%;
+    `;
+    const SideImage=styled.img`
+    width:100%;
+    height:100%;
+    display:flex;
+    border-radius:30px;
+    `;
+    const MainSection=styled.div``;
+    const LeftSection=styled.div``;
+    const ImageBar=styled.div``;
+    const Image1=styled.img``;
+    const Image2=styled.img``;
+    const HeadName=styled.h1``;
+    const SubSection=styled.div``;
+    const SubName=styled.h3``;
+    const SideName=styled.h5``;
+    const RightSection=styled.div``;
+    const BottomLeftSection=styled.div``;
+    const BottomRightSection=styled.div``;
+    const Bottomsection=styled.div``;
+    const MainHeading=styled.h1``;
+    const ButtonTag=styled.button``;
   
    
 
