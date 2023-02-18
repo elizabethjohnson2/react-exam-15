@@ -4,6 +4,7 @@ import {Link} from"react-router-dom";
 
 
 
+
  export default function Nav(){
   
   
@@ -133,60 +134,85 @@ import {Link} from"react-router-dom";
             </ImageBars>
         </Background>
         <MainSection>
-            <LeftSection>
+           
+                <ButtonBar>
                 <ImageBar>
-                    <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
-                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
+                <Bar1>
+               <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
+               </Bar1>
+               <Bar2>
+                <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
+                </Bar2>
                 </ImageBar>
                 <HeadName>Python</HeadName>
                 <SubSection>
                 <SubName>14 Projects</SubName>
                 <SideName>24GB</SideName>
                 </SubSection>
+                </ButtonBar>
 
-            </LeftSection>
-            <RightSection>
+                <ButtonBar>
             <ImageBar>
+            <Bar1>
                     <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
+                    </Bar1>
+                    <Bar2>
                     <Image2  src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                    </Bar2>
+                    
+                   
                 </ImageBar>
                 <HeadName>PHP</HeadName>
                 <SubSection>
                 <SubName>21 Projects</SubName>
                 <SideName>24GB</SideName>
                 </SubSection>
-                </RightSection>
-                <BottomLeftSection>
+                </ButtonBar>
+
+                <ButtonBar>
+              
+                
                 <ImageBar>
-                    <Image1/>
-                    <Image2/>
+                <Bar1>
+                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
+                    </Bar1>
+                    <Bar2>
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                    </Bar2>
                 </ImageBar>
                 <HeadName>ASP</HeadName>
                 <SubSection>
                 <SubName>19 Projects</SubName>
                 <SideName>24GB</SideName>
                 </SubSection>
+                </ButtonBar>
+
+                <ButtonBar>
                 
-                </BottomLeftSection>
-                <BottomRightSection>
+                
                 <ImageBar>
-                    <Image1/>
-                    <Image2/>
+                    <Bar1>
+                    <Image1 src={require("../../assets/images/Property 1=FILE C.svg").default} alt="image"/>
+                    </Bar1>
+                    <Bar2>
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default} alt="image" />
+                    </Bar2>
                 </ImageBar>
                 <HeadName>Ruby</HeadName>
                 <SubSection>
                 <SubName>17 Projects</SubName>
                 <SideName>12GB</SideName>
-                </SubSection>
-                </BottomRightSection>
+               </SubSection>
+                </ButtonBar>
         </MainSection>
         <Bottomsection>
+            <ImageSection>
+                <Image3 src={require("../../assets/images/Frame 3466890.png")} alt="Image"/>
             <MainHeading>Invite 2 friends and get 5GB extra space.</MainHeading>
             <ButtonTag>Invite Now!</ButtonTag>
+            </ImageSection>
         </Bottomsection>
     </RightContainer>
-        
-       
         </MainContainer>
      
     )
@@ -483,23 +509,75 @@ import {Link} from"react-router-dom";
     const SideImage=styled.img`
     width:100%;
     height:100%;
-    display:flex;
+    display:block;
     border-radius:30px;
     `;
-    const MainSection=styled.div``;
-    const LeftSection=styled.div``;
-    const ImageBar=styled.div``;
-    const Image1=styled.img``;
-    const Image2=styled.img``;
-    const HeadName=styled.h1``;
-    const SubSection=styled.div``;
-    const SubName=styled.h3``;
-    const SideName=styled.h5``;
-    const RightSection=styled.div``;
-    const BottomLeftSection=styled.div``;
-    const BottomRightSection=styled.div``;
-    const Bottomsection=styled.div``;
-    const MainHeading=styled.h1``;
+    const MainSection=styled.div`
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:50px;
+    `;
+
+    const ButtonBar=styled.button`
+    width:48%;
+    height:128px;
+    background-color:#fff;
+    border-radius:10%;
+    margin-bottom: 20px;
+  
+    `;
+    const ImageBar=styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    /* width:20%; */
+    `;
+    const Bar1=styled.div`
+    width:23%;
+    `;
+    const Bar2=styled.div`
+    width:10%;
+    `;
+    const Image1=styled.img`
+    width:100%;
+    display:block;
+    `;
+    const Image2=styled.img`
+    width:100%;
+    display:block;
+    `;
+    const HeadName=styled.h6`
+    font-size:18px;
+    text-align:start;
+   margin-top:5px;
+    `;
+    const SubSection=styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+   margin-top:-26px;
+    /* width:20px; */
+
+    `;
+    const SubName=styled.small`
+    font-size:15px;
+    
+    `;
+    const SideName=styled.small`
+    font-size:15px;
+    `;
+    const Bottomsection=styled.div`
+    background-image:url("Frame 3466890.png");
+    
+   
+    `;
+    const ImageSection=styled.div`
+    `;
+    const Image3=styled.img`
+    
+    `;
+    const MainHeading=styled.small``;
     const ButtonTag=styled.button``;
   
    
