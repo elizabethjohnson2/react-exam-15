@@ -4,105 +4,14 @@ import styled from "styled-components";
 
 export default function NavBar(){
     return(
+        <NavBarDiv>
+            <h1>navbar</h1>
 
-<MainContainer>
-    <RightContainer>
-        <Background>
-            <SideImage src={require("../../assets/images/Frame 3466680.png").default} alt="image"/>
-            <HeadLine>Current Subscription plan</HeadLine>
-            <TimeLine>$ 1325.00</TimeLine>
-            <SubHeading>Company Plus</SubHeading>
-            <Button>Change Plan</Button>
-        </Background>
-        <MainSection>
-            <LeftSection>
-                <ImageBar>
-                    <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
-                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
-                </ImageBar>
-                <HeadName>Python</HeadName>
-                <SubSection>
-                <SubName>14 Projects</SubName>
-                <SideName>24GB</SideName>
-                </SubSection>
-
-            </LeftSection>
-            <RightSection>
-            <ImageBar>
-                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
-                    <Image2  src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
-                </ImageBar>
-                <HeadName>PHP</HeadName>
-                <SubSection>
-                <SubName>21 Projects</SubName>
-                <SideName>24GB</SideName>
-                </SubSection>
-                </RightSection>
-                <BottomLeftSection>
-                <ImageBar>
-                    <Image1/>
-                    <Image2/>
-                </ImageBar>
-                <HeadName>ASP</HeadName>
-                <SubSection>
-                <SubName>19 Projects</SubName>
-                <SideName>24GB</SideName>
-                </SubSection>
-                
-                </BottomLeftSection>
-                <BottomRightSection>
-                <ImageBar>
-                    <Image1/>
-                    <Image2/>
-                </ImageBar>
-                <HeadName>Ruby</HeadName>
-                <SubSection>
-                <SubName>17 Projects</SubName>
-                <SideName>12GB</SideName>
-                </SubSection>
-                </BottomRightSection>
-        </MainSection>
-        <Bottomsection>
-            <MainHeading>Invite 2 friends and get 5GB extra space.</MainHeading>
-            <ButtonTag>Invite Now!</ButtonTag>
-        </Bottomsection>
-    </RightContainer>
-</MainContainer>
+        </NavBarDiv>
     )
 }
-const MainContainer=styled.div`
+
+const NavBarDiv = styled.div`
+    width: 200px;
+    position: fixed;
 `;
-const RightContainer=styled.div`
-display:flex;
-justify-content:space-between;
-
-`;
-const Background=styled.div`
-background-color:#fff;
-width:10%;
-height:10px;
-border-radius:2px solid #000;
-`;
-const SideImage=styled.img``;
-const HeadLine=styled.h1``;
-const TimeLine=styled.h5``;
-const SubHeading=styled.h3``;
-const Button=styled.button``;
-const MainSection=styled.div``;
-const LeftSection=styled.div``;
-const ImageBar=styled.div``;
-const Image1=styled.img``;
-const Image2=styled.img``;
-const HeadName=styled.h1``;
-const SubSection=styled.div``;
-const SubName=styled.h3``;
-const SideName=styled.h5``;
-const RightSection=styled.div``;
-const BottomLeftSection=styled.div``;
-const BottomRightSection=styled.div``;
-const Bottomsection=styled.div``;
-const MainHeading=styled.h1``;
-const ButtonTag=styled.button``;
-
-
-
