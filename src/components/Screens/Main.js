@@ -361,11 +361,11 @@ const Items = styled.div`
     width: 100%;
     margin-bottom: 20px;
     color: gray;
-`
+`;
 const Leftitems = styled.div`
     width: 50%;
     display: flex;
-`
+`;
 const GridMain = styled.div`
     display: grid;
     grid-template-columns: repeat(2, .5fr) repeat(7, 1fr);
