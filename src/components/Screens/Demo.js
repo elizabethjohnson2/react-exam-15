@@ -7,7 +7,7 @@ function Demo() {
   return (
     <GridMain>
         <SideBar>
-            <Nav />
+        <Nav />
         </SideBar>
         <Header>
         <HeaderContainer>
@@ -71,6 +71,9 @@ function Demo() {
                         <Name1>storage</Name1>
                         <Name2>+Add More</Name2>
                         </ListItem>
+                        <Graph>
+                            <GraphImage/>
+                        </Graph>
                         <ListItem>
                     <SecondName>35/40 </SecondName>
                     <Name12>GB</Name12>
@@ -82,6 +85,139 @@ function Demo() {
                         <ButtonTags>Add Droplet</ButtonTags>
                     </RightContent>
                 </Number>
+                <LeftBar>
+                <RecentName>Recently Commits </RecentName>
+                </LeftBar>
+                <Section> 
+                   
+                     
+                    <ImageBares>
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                </ImageBar>
+                                <MiddleBar>
+                                    <Code>dcf2b99</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags>
+                        </Items>
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                </ImageBar> 
+                                <MiddleBar>
+                                    <Code>75075fa</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags>
+                        </Items>
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                </ImageBar>
+                                <MiddleBar>
+                                    <Code>8936e01</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags> 
+                        </Items>
+                        
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                </ImageBar> 
+                                <MiddleBar>
+                                    <Code>6d5ddel</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags> 
+                        </Items>
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                </ImageBar> 
+                                <MiddleBar>
+                                    <Code>ef65505</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags>
+                        </Items>
+
+                        <Items>
+                            <Leftitems>
+                                <ImageBar>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                </ImageBar> 
+                                <MiddleBar>
+                                    <Code>67efafc</Code>
+                                    <Time>10 oct,10:23pm</Time>
+                                </MiddleBar>
+                            </Leftitems>
+                            <MbTags>
+                                <Mb>12MB</Mb>
+                            </MbTags>
+                        </Items>
+                        
+                        </ImageBares> 
+                        <BorderSection>
+                            <Droplet>
+                                <DropName>Droplet 1</DropName>
+                                <Time1>78.43%</Time1>
+                                <TimeTag>
+                                    <TimeImage/>
+                                </TimeTag>
+                                <Time2>2.35%</Time2>
+                            </Droplet>
+                            <Droplet>
+                                <DropName>Droplet 1</DropName>
+                                <Time1>78.43%</Time1>
+                                <TimeTag>
+                                    <TimeImage/>
+                                </TimeTag>
+                                <Time2>2.35%</Time2>
+                            </Droplet>
+                            <Droplet>
+                                <DropName>Droplet 1</DropName>
+                                <Time1>78.43%</Time1>
+                                <TimeTag>
+                                    <TimeImage/>
+                                </TimeTag>
+                                <Time2>2.35%</Time2>
+                            </Droplet>
+                            <Droplet>
+                                <DropName>Droplet 1</DropName>
+                                <Time1>78.43%</Time1>
+                                <TimeTag>
+                                    <TimeImage/>
+                                </TimeTag>
+                                <Time2>2.35%</Time2>
+                            </Droplet>
+
+
+                        </BorderSection>  
+
+             </Section>
             </MiddleSections>
         </MiddleSec>
         <SideSec>
@@ -102,7 +238,7 @@ function Demo() {
                 <ButtonBar>
                 <ImageBar>
                 <Bar1>
-               <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
+                <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
                </Bar1>
                <Bar2>
                 <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
@@ -184,14 +320,24 @@ function Demo() {
     </GridMain>
   )
 }
-
+const Items = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    color: gray;
+`
+const Leftitems = styled.div`
+    width: 50%;
+    display: flex;
+`
 const GridMain = styled.div`
     display: grid;
     grid-template-columns: repeat(2, .5fr) repeat(7, 1fr);
     grid-template-rows: .5fr repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 100vh;
+    height: 110vh;
     background-color: #212236;
 `;
 const SideBar = styled.div`
@@ -337,15 +483,16 @@ const HeaderContainer=styled.div`
     margin-right: 30px;  
     `;
     const MiddleSection=styled.div`
-    /* border:30px; */
-    /* background-color:#fff;
+    /* border:30px;
+    background-color:#fff;
     width:80%;
     height:50px; */
     `;
     const HeadSection=styled.div`
     display:flex;
     justify-content:space-between;
-    padding-top:30px;
+    padding-top:14px;
+    padding-bottom: 47px;
    
     `;
     const LeftSection=styled.div`
@@ -356,6 +503,7 @@ const HeaderContainer=styled.div`
     font-weight:100;
     color:#67636F;
     margin-left:163px;
+   
     `;
      const RightSection=styled.div`
      display:flex;
@@ -405,13 +553,20 @@ const HeaderContainer=styled.div`
     display:block;
     `;
     const MiddleSections=styled.div`
+    background-color:#7974B3;
+    margin-left:30px;
+    padding-top:40px;
+    padding-right:20px;
+    height:200px;
+   
+
    
     `;
     const Number=styled.div`
      display:flex;
     justify-content:space-between;
-    padding-top: 73px;
-    padding-left: 164px;
+    padding-top: 10px;
+    padding-left: 100px;
     width:80%;
     `;
     const ListItem=styled.div`
@@ -421,13 +576,13 @@ const HeaderContainer=styled.div`
     `;
     const FirstNumber=styled.span`
     font-size:30px;
-    font-weight:100;
+    font-weight:500;
     color:#fff;
     
     `;
     const SecondName=styled.span`
     font-size:30px;
-    font-weight:100;
+    font-weight:500;
     color:#fff;
     `;
    
@@ -447,12 +602,84 @@ const HeaderContainer=styled.div`
     const RightContent=styled.div`
     margin-left:10px;`;
     const ButtonTags=styled.button`
-    background-color:#fff;
+    background-color:#FB896B;
     height:65px;
     width:100%;
     font-size:20px;
     
     `;
+    const Graph=styled.div``;
+    const GraphImage=styled.img``;
+    const Section=styled.div`
+     
+     display:flex;
+     justify-content:space-between;
+     padding-top:50px;
+     padding-left:60px;
+    
+    `;
+    const RecentName=styled.small`
+    `;
+    const LeftBar=styled.div`
+        padding-top:120px;
+    `;
+    
+    const ImageBares=styled.div`
+        margin-left:-46px;
+        width: 300px;
+        /* background-color: #212236; */
+    `;
+    // const ImageBar1=styled.div`
+    // width:50%;
+    // `;
+    const CatImage=styled.img`
+    width:75%;
+    display:block;
+    background-color:gray;
+    height:40px;
+    border-radius: 20px;
+    `;
+    const MiddleBar=styled.div`
+    width:40%;
+    `;
+    const ImageBar2=styled.div`
+    width:50%;`;
+    const ImageBar3=styled.div`
+    width:50%;`;
+    const ImageBar4=styled.div`
+    width:50%;`;
+    const ImageBar5=styled.div`
+    width:50%;`;
+    const ImageBar6=styled.div`
+    width:50%;`;
+    const Code=styled.small`
+    font-size:20px;
+    font-weight:200;
+    `;
+    const Time=styled.span`
+    display:flex;
+    `;
+    const MbTags=styled.div`
+    margin-left:50px;
+
+    `;
+    const Mb=styled.small`
+    font-size:20px;
+    font-weight:200;
+    `;
+    const BorderSection=styled.div``;
+    const Droplet=styled.div``;
+    const DropName=styled.small``;
+    const Time1=styled.span``;
+    const TimeTag=styled.div``;
+    const TimeImage=styled.img``;
+    const Time2=styled.small``;
+
+
+
+
+
+
 
     const RightContainer=styled.div`
     position: absolute;
@@ -527,7 +754,6 @@ const HeaderContainer=styled.div`
     display:flex;
     justify-content:space-between;
     align-items: center;
-    /* width:20%; */
     `;
     const Bar1=styled.div`
     width:23%;

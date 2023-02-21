@@ -101,6 +101,7 @@ import {Link} from"react-router-dom";
    
      background-color:#212236;
      margin-left: auto; 
+     /* height:140vh; */
     `;
     const SectionContainer=styled.div`
      display: flex;`;
