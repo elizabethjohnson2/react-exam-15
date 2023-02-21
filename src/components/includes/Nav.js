@@ -141,7 +141,7 @@ import {Link} from"react-router-dom";
     
     border-radius:8px;
     margin-left: 11px;
-    background-color:#212236;
+    background-color:#26273b;
     height: 52px;
     width: 50px;    
     `;
