@@ -17,65 +17,65 @@ import {Link} from"react-router-dom";
                 </TagContainer>
                 
                 <ListTagItem>
-                 <LinkItems>
+                 <LinkItems to={"/Main"}>
                  <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=dashboard.svg").default} alt="Image1"/>
+                <LinkImage src={require("../../assets/images/Property 1=dashboard.svg")} alt="Image1"/>
                 </ImageButton>
                 <LinkName>DashBoard</LinkName> 
                 </LinkItems>
-                <LinkItems>
+                <LinkItems to={"/c"}>
                 <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=all.svg").default} alt="Image2"/>
+                <LinkImage src={require("../../assets/images/Property 1=all.svg")} alt="Image2"/>
                 </ImageButton>
                 <LinkName>All Files</LinkName> 
                 </LinkItems>
-                <LinkItems>
+                <LinkItems to={"/c"}>
                 <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=share.svg").default} alt="Image3"/>
+                <LinkImage src={require("../../assets/images/Property 1=share.svg")} alt="Image3"/>
                 </ImageButton>
                 <LinkName>Shared</LinkName> 
                 </LinkItems>
-                <LinkItems>
+                <LinkItems to={"/c"} >
                 <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=like.svg").default} alt="Image4"/>
+                <LinkImage src={require("../../assets/images/Property 1=like.svg")} alt="Image4"/>
                 </ImageButton>
                 <LinkName>Favourites</LinkName> 
                 </LinkItems>
-                <LinkItems>
+                <LinkItems to={"/c"}>
                 <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=unread.svg").default} alt="Image5"/>
+                <LinkImage src={require("../../assets/images/Property 1=unread.svg")} alt="Image5"/>
                 </ImageButton>
                 <LinkName>Recent</LinkName> 
                 </LinkItems>
-                <LinkItems>
+                <LinkItems to={"/c"}>
                 <ImageButton>
-                <LinkImage src={require("../../assets/images/Property 1=reduce.svg").default} alt="Image6"/>
+                <LinkImage src={require("../../assets/images/Property 1=reduce.svg")} alt="Image6"/>
                 </ImageButton>
                 <LinkName>Request</LinkName> 
                 </LinkItems>
                 </ListTagItem>
                 <ListMainItem>
-                    <ListMain>
+                    <ListMain to={"/c"}>
                         <ImageButtonTag>
-                            <TagImages src={require("../../assets/images/Property 1=camera.svg").default} alt="Image"/>
+                            <TagImages src={require("../../assets/images/Property 1=camera.svg")} alt="Image"/>
                         </ImageButtonTag>
                         <TagNames>Picture</TagNames>
                     </ListMain>
-                    <ListMain>
+                    <ListMain to={"/c"}>
                         <ImageButtonTag>
-                            <TagImages src={require("../../assets/images/Property 1=vedio.svg").default} alt="Image"/>
+                            <TagImages src={require("../../assets/images/Property 1=vedio.svg")} alt="Image"/>
                         </ImageButtonTag>
                         <TagNames>Videos</TagNames>
                     </ListMain>
-                    <ListMain>
+                    <ListMain to={"/c"}>
                         <ImageButtonTag>
-                            <TagImages src={require("../../assets/images/Property 1=note.svg").default} alt="Image"/>
+                            <TagImages src={require("../../assets/images/Property 1=note.svg")} alt="Image"/>
                         </ImageButtonTag>
                         <TagNames>Documents</TagNames>
                     </ListMain>
-                    <ListMain>
+                    <ListMain to={"/c"}>
                         <ImageButtonTag>
-                            <TagImages src={require("../../assets/images/Property 1=sign.svg").default} ait="Image"/>
+                            <TagImages src={require("../../assets/images/Property 1=sign.svg")} ait="Image"/>
                         </ImageButtonTag>
                         <TagNames>Signed</TagNames>
                     </ListMain>
@@ -133,7 +133,7 @@ import {Link} from"react-router-dom";
       justify-content: space-between;
       `;
      
-      const LinkItems=styled.div`
+      const LinkItems=styled(Link)`
       width:50%;
      `;
 
@@ -160,7 +160,7 @@ import {Link} from"react-router-dom";
       display:flex;
       flex-wrap: wrap;
       justify-content: space-between;`;
-      const ListMain=styled.div`
+      const ListMain=styled(Link)`
          width:50%;`;
       const ImageButtonTag=styled.button`
        /* border-radius:8px;

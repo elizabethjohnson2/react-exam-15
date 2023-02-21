@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 
 function Demo() {
  const pull=()=>{
-    Swal.fire('Hi I am Elizabath')
+    Swal.fire('Comming Soon')
  }
   return (
     <GridMain>
@@ -50,6 +50,9 @@ function Demo() {
         </HeaderContainer>
         </Header>
         <MiddleSec>
+            commingsoon
+        </MiddleSec>
+        {/* <MiddleSec>
             <HeadSection>
            
                 <LeftSection>
@@ -284,7 +287,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
             <ImageBar>
             <Bar1>
                     <Image1 src={require("../../assets/images/Property 1=FILE O.svg")} alt="image"/>
@@ -302,7 +305,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
               
                 
                 <ImageBar>
@@ -320,7 +323,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
                 
                 
                 <ImageBar>
@@ -349,7 +352,7 @@ function Demo() {
             
         </Bottomsection>
         </RightContainer>
-        </SideSec>
+        </SideSec> */}
     </GridMain>
   )
 }
@@ -382,6 +385,10 @@ grid-area: 1 / 3 / 2 / 10;
 `;
 const MiddleSec = styled.div`
 grid-area: 2 / 3 / 5 / 7;
+color: #fff;
+font-size: 60px;
+margin-left: 500px;
+margin-top: 300px;
 `;
 const SideSec = styled.div`
 grid-area: 2 / 7 / 5 / 10;

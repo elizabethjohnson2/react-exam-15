@@ -2,8 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Nav from '../includes/Nav';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2'
+
+// import 'sweetalert2/src/sweetalert2.scss'
+
+
 
 function Demo() {
+ const pull=()=>{
+    Swal.fire('Comming Soon')
+ }
   return (
     <GridMain>
         <SideBar>
@@ -15,15 +23,15 @@ function Demo() {
             <InnerBox>
             <Left>
                 <LinkImageContainer>
-                <LogoImage  src={require("../../assets/images/Property 1=serach.svg").default} alt="logo"/>
+                <LogoImage  src={require("../../assets/images/Property 1=serach.svg")} alt="logo"/>
                 </LinkImageContainer>
                <Images>
                 <ImageTag>
-                <StateImage src={require("../../assets/images/Component 429.svg").default} alt="Image"/>
+                <StateImage src={require("../../assets/images/Component 429.svg")} alt="Image"/>
                 <StateName>United States</StateName>
                 </ImageTag>
                 <ImageTags>
-                <ArrowImage src={require("../../assets/images/Property 1=arrow.svg").default} alt="Image"/>
+                <ArrowImage src={require("../../assets/images/Property 1=arrow.svg")} alt="Image"/>
                 <ArrowName>87%</ArrowName>
                 </ImageTags> 
                 </Images>     
@@ -32,16 +40,16 @@ function Demo() {
             </InnerBox>
 
             <Middle>
-                <PropertyImage src={require("../../assets/images/Property 1=night.svg").default} alt="Night"/>
-                <BellImage src={require("../../assets/images/Property 1=bell.svg").default} alt="Bell"/>
+                <PropertyImage src={require("../../assets/images/Property 1=night.svg")} alt="Night"/>
+                <BellImage src={require("../../assets/images/Property 1=bell.svg")} alt="Bell"/>
             </Middle>
             <Right>
                 <FrameImage src={require("../../assets/images/Frame 3466889.png")} alt="frame"/>
-                <TagImage src={require("../../assets/images/Property 1=down.svg").default} alt="arrow"/>
+                <TagImage src={require("../../assets/images/Property 1=down.svg")} alt="arrow"/>
             </Right>
         </HeaderContainer>
         </Header>
-        <MiddleSec>
+        {/* <MiddleSec>
             <HeadSection>
            
                 <LeftSection>
@@ -49,19 +57,19 @@ function Demo() {
                 </LeftSection>
                 <RightSection>
                 <State>
-                    <Image src={require("../../assets/images/Component 429.svg").default} alt="image"/>
+                    <Image src={require("../../assets/images/Component 429.svg")} alt="image"/>
                 </State>
                 <Name>US Sever</Name>
                 
                
                     <Arrow>
-                        <ImageTag1 src={require("../../assets/images/Property 1=down.svg").default} alt="image"/>
+                        <ImageTag1 src={require("../../assets/images/Property 1=down.svg")} alt="image"/>
                     </Arrow>
                     <Icon>
-                        <ImageTag2 src={require("../../assets/images/Property 1=control.svg").default} alt="image"/>
+                        <ImageTag2 src={require("../../assets/images/Property 1=control.svg")} alt="image"/>
                     </Icon>
                     <MainContent>
-                        <ImageTag3 src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                        <ImageTag3 src={require("../../assets/images/Property 1=menu.svg")} alt="image"/>
                     </MainContent>
                 </RightSection>
                
@@ -108,7 +116,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg")} alt="image"/>
                                 </ImageBar>
                                 <MiddleBar>
                                     <Code>dcf2b99</Code>
@@ -122,7 +130,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg")} alt="image"/>
                                 </ImageBar> 
                                 <MiddleBar>
                                     <Code>75075fa</Code>
@@ -136,7 +144,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg")} alt="image"/>
                                 </ImageBar>
                                 <MiddleBar>
                                     <Code>8936e01</Code>
@@ -151,7 +159,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg")} alt="image"/>
                                 </ImageBar> 
                                 <MiddleBar>
                                     <Code>6d5ddel</Code>
@@ -165,7 +173,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=cat.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=cat.svg")} alt="image"/>
                                 </ImageBar> 
                                 <MiddleBar>
                                     <Code>ef65505</Code>
@@ -180,7 +188,7 @@ function Demo() {
                         <Items>
                             <Leftitems>
                                 <ImageBar>
-                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg").default} alt="image"/>
+                                    <CatImage src={require("../../assets/images/Property 1=trash b.svg")} alt="image"/>
                                 </ImageBar> 
                                 <MiddleBar>
                                     <Code>67efafc</Code>
@@ -195,36 +203,48 @@ function Demo() {
                         </ImageBares> 
                         <BorderSection>
                             <Droplet>
+                                <Lefts>
                                 <DropName>Droplet 1</DropName>
                                 <Time1>78.43%</Time1>
+                                <Time2>2.35%</Time2>
+                                </Lefts>
                                 <TimeTag>
                                     <TimeImage src={require("../../assets/images/image4.png")} alt="image"/>
                                 </TimeTag>
-                                <Time2>2.35%</Time2>
+                                
                             </Droplet>
                             <Droplet>
+                                <Lefts>
                                 <DropName>Droplet 1</DropName>
                                 <Time1>78.43%</Time1>
-                                <TimeTag>
-                                    <TimeImage/>
-                                </TimeTag>
                                 <Time2>2.35%</Time2>
+                                </Lefts>
+                                <TimeTag>
+                                    <TimeImage src={require("../../assets/images/image2.png")} alt="image"/>
+                                </TimeTag>
+                                
                             </Droplet>
                             <Droplet>
+                                <Lefts>
                                 <DropName>Droplet 1</DropName>
                                 <Time1>78.43%</Time1>
-                                <TimeTag>
-                                    <TimeImage/>
-                                </TimeTag>
                                 <Time2>2.35%</Time2>
+                                </Lefts>
+                                <TimeTag>
+                                    <TimeImage src={require("../../assets/images/image.png")} alt="image"/>
+                                </TimeTag>
+    
                             </Droplet>
                             <Droplet>
+                                <Lefts>
                                 <DropName>Droplet 1</DropName>
                                 <Time1>78.43%</Time1>
-                                <TimeTag>
-                                    <TimeImage/>
-                                </TimeTag>
                                 <Time2>2.35%</Time2>
+                                </Lefts>
+                                <TimeTag>
+                                    <TimeImage src={require("../../assets/images/image4.png")} alt="image"/>
+                                </TimeTag>
+                                
                             </Droplet>
 
 
@@ -248,13 +268,13 @@ function Demo() {
         </Background>
         <MainSection>
            
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
                 <ImageBar>
                 <Bar1>
-                <Image1 src={require("../../assets/images/Property 1=FILE B.svg").default}alt="image"/>
+                <Image1 src={require("../../assets/images/Property 1=FILE B.svg")}alt="image"/>
                </Bar1>
                <Bar2>
-                <Image2 src={require("../../assets/images/Property 1=menu.svg").default}alt="image"/>
+                <Image2 src={require("../../assets/images/Property 1=menu.svg")}alt="image"/>
                 </Bar2>
                 </ImageBar>
                 <HeadName>Python</HeadName>
@@ -264,13 +284,13 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
             <ImageBar>
             <Bar1>
-                    <Image1 src={require("../../assets/images/Property 1=FILE O.svg").default} alt="image"/>
+                    <Image1 src={require("../../assets/images/Property 1=FILE O.svg")} alt="image"/>
                     </Bar1>
                     <Bar2>
-                    <Image2  src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                    <Image2  src={require("../../assets/images/Property 1=menu.svg")} alt="image"/>
                     </Bar2>
                     
                    
@@ -282,15 +302,15 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
               
                 
                 <ImageBar>
                 <Bar1>
-                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg").default} alt="image"/>
+                    <Image1 src={require("../../assets/images/Property 1=FILE Y.svg")} alt="image"/>
                     </Bar1>
                     <Bar2>
-                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg")} alt="image"/>
                     </Bar2>
                 </ImageBar>
                 <HeadName>ASP</HeadName>
@@ -300,15 +320,15 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
                 
                 
                 <ImageBar>
                     <Bar1>
-                    <Image1 src={require("../../assets/images/Property 1=FILE C.svg").default} alt="image"/>
+                    <Image1 src={require("../../assets/images/Property 1=FILE C.svg")} alt="image"/>
                     </Bar1>
                     <Bar2>
-                    <Image2 src={require("../../assets/images/Property 1=menu.svg").default} alt="image" />
+                    <Image2 src={require("../../assets/images/Property 1=menu.svg")} alt="image" />
                     </Bar2>
                 </ImageBar>
                 <HeadName>Ruby</HeadName>
@@ -329,7 +349,7 @@ function Demo() {
             
         </Bottomsection>
         </RightContainer>
-        </SideSec>
+        </SideSec> */}
     </GridMain>
   )
 }
@@ -700,16 +720,50 @@ const HeaderContainer=styled.div`
     font-size:20px;
     font-weight:200;
     `;
-    const BorderSection=styled.div``;
-    const Droplet=styled.div``;
-    const DropName=styled.small``;
-    const Time1=styled.span``;
-    const TimeTag=styled.div``;
+    const BorderSection=styled.div`
+   
+    `;
+    const Droplet=styled.div`
+    display:flex;
+    justify-content:space-between;
+    border-radius:30px;
+    background:1px solid;
+    background-color:#212236;
+    padding-top:20px;
+    `;
+    const Lefts=styled.div`
+    width:70%;
+    margin-right:30px;
+    `;
+    const Rights=styled.div`
+    width:30%;
+    /* margin-right:20px; */
+    `;
+    const DropName=styled.small`
+    font-size:20px;
+    font-weight:200;
+    
+    `;
+    const Time1=styled.h2`
+    /* display:flex; */
+    font-size:30px;
+    margin-top:10px;
+    color:#fff;
+    `;
+    const TimeTag=styled.div`
+    width:90%;
+    margin-left:50px;
+    `;
     const TimeImage=styled.img`
     width: 100%;
     display: block;
     `;
-    const Time2=styled.small``;
+    const Time2=styled.small`
+    font-size:10px;
+    color:#fff;
+    margin-top:10px;
+    
+    `;
 
 
 
