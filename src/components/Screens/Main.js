@@ -10,7 +10,7 @@ import Swal from 'sweetalert2'
 
 function Demo() {
  const pull=()=>{
-    Swal.fire('Hi I am Elizabath')
+    Swal.fire('Hi Hello')
  }
   return (
     <GridMain>
@@ -284,7 +284,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
             <ImageBar>
             <Bar1>
                     <Image1 src={require("../../assets/images/Property 1=FILE O.svg")} alt="image"/>
@@ -294,7 +294,7 @@ function Demo() {
                     </Bar2>
                     
                    
-                </ImageBar>
+                </ImageBar >
                 <HeadName>PHP</HeadName>
                 <SubSection>
                 <SubName>21 Projects</SubName>
@@ -302,7 +302,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
               
                 
                 <ImageBar>
@@ -320,7 +320,7 @@ function Demo() {
                 </SubSection>
                 </ButtonBar>
 
-                <ButtonBar>
+                <ButtonBar onClick={pull}>
                 
                 
                 <ImageBar>
