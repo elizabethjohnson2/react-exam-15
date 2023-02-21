@@ -101,7 +101,6 @@ import {Link} from"react-router-dom";
    
      background-color:#212236;
      margin-left: auto; 
-     /* height:140vh; */
     `;
     const SectionContainer=styled.div`
      display: flex;`;
@@ -124,7 +123,7 @@ import {Link} from"react-router-dom";
     height: 35px;
     `;
       const Heading=styled.h1`
-      margin-left: 20px;
+      margin-left: 30px;
       font-size: 38px;
       `;
       const ListTagItem=styled.div`

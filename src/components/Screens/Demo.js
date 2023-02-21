@@ -11,6 +11,7 @@ function Demo() {
         </SideBar>
         <Header>
         <HeaderContainer>
+        
             <InnerBox>
             <Left>
                 <LinkImageContainer>
@@ -42,6 +43,7 @@ function Demo() {
         </Header>
         <MiddleSec>
             <HeadSection>
+           
                 <LeftSection>
                 <Heade>Hi Mikey!</Heade>
                 </LeftSection>
@@ -62,8 +64,11 @@ function Demo() {
                         <ImageTag3 src={require("../../assets/images/Property 1=menu.svg").default} alt="image"/>
                     </MainContent>
                 </RightSection>
+               
+                
             </HeadSection>
             <MiddleSections>
+               
                 <Number>
                     <ListItem>
                     <FirstNumber>35/40 </FirstNumber>
@@ -71,23 +76,31 @@ function Demo() {
                         <Name1>storage</Name1>
                         <Name2>+Add More</Name2>
                         </ListItem>
-                        <Graph>
-                            <GraphImage/>
-                        </Graph>
+                        
                         <ListItem>
                     <SecondName>35/40 </SecondName>
                     <Name12>GB</Name12>
                         <Name1>storage</Name1>
                         <Name2>+Add More</Name2>
                         </ListItem>
+                       
                    
                     <RightContent>
                         <ButtonTags>Add Droplet</ButtonTags>
                     </RightContent>
+                   
                 </Number>
+               
+               
+               
+                <Graph>
+                     <GraphImage src={require("../../assets/images/images.png")} alt="image"/>
+                 </Graph>
+                
                 <LeftBar>
                 <RecentName>Recently Commits </RecentName>
                 </LeftBar>
+               
                 <Section> 
                    
                      
@@ -185,7 +198,7 @@ function Demo() {
                                 <DropName>Droplet 1</DropName>
                                 <Time1>78.43%</Time1>
                                 <TimeTag>
-                                    <TimeImage/>
+                                    <TimeImage src={require("../../assets/images/image4.png")} alt="image"/>
                                 </TimeTag>
                                 <Time2>2.35%</Time2>
                             </Droplet>
@@ -491,11 +504,17 @@ const HeaderContainer=styled.div`
     const HeadSection=styled.div`
     display:flex;
     justify-content:space-between;
-    padding-top:14px;
+    padding-top:20px;
     padding-bottom: 47px;
    
+   
+   
     `;
+    const Sections=styled.div`
+     
+     `;
     const LeftSection=styled.div`
+    margin-top:10px;
     
     `;
     const Heade=styled.span`
@@ -524,8 +543,10 @@ const HeaderContainer=styled.div`
     const Name=styled.span`
     font-size:15px;
     font-weight:100;
-    padding-left:13px;
+    margin-left:13px;
+    /* margin-top:-53px; */
     color:#67636F;
+
     `;
    
     const Arrow=styled.div`
@@ -553,11 +574,12 @@ const HeaderContainer=styled.div`
     display:block;
     `;
     const MiddleSections=styled.div`
-    background-color:#7974B3;
+    background-color:#212236;
     margin-left:30px;
-    padding-top:40px;
+    padding-top:30px;
     padding-right:20px;
-    height:200px;
+    height:120px;
+    border-radius:10px;
    
 
    
@@ -565,8 +587,10 @@ const HeaderContainer=styled.div`
     const Number=styled.div`
      display:flex;
     justify-content:space-between;
-    padding-top: 10px;
-    padding-left: 100px;
+    /* padding-top: 10px;
+    padding-left: 100px; */
+    margin-top:-53px;
+    margin-left:100px;
     width:80%;
     `;
     const ListItem=styled.div`
@@ -606,26 +630,35 @@ const HeaderContainer=styled.div`
     height:65px;
     width:100%;
     font-size:20px;
-    
     `;
-    const Graph=styled.div``;
-    const GraphImage=styled.img``;
+    const Graph=styled.div`
+    width:40%;
+    margin-left:70px;
+    `;
+    const GraphImage=styled.img`
+    width:100%;
+    display:block;
+    `;
     const Section=styled.div`
      
      display:flex;
      justify-content:space-between;
-     padding-top:50px;
-     padding-left:60px;
+     padding-top:40px;
+     padding-left:70px;
     
     `;
     const RecentName=styled.small`
+    font-size:30px;
+    font-weight:400;
+   
     `;
     const LeftBar=styled.div`
-        padding-top:120px;
+        padding-top:47px;
+        margin-left:25px;
     `;
     
     const ImageBares=styled.div`
-        margin-left:-46px;
+        margin-left:-30px;
         width: 300px;
         /* background-color: #212236; */
     `;
@@ -640,7 +673,7 @@ const HeaderContainer=styled.div`
     border-radius: 20px;
     `;
     const MiddleBar=styled.div`
-    width:40%;
+    width:50%;
     `;
     const ImageBar2=styled.div`
     width:50%;`;
@@ -653,7 +686,7 @@ const HeaderContainer=styled.div`
     const ImageBar6=styled.div`
     width:50%;`;
     const Code=styled.small`
-    font-size:20px;
+    font-size:10px;
     font-weight:200;
     `;
     const Time=styled.span`
@@ -672,7 +705,10 @@ const HeaderContainer=styled.div`
     const DropName=styled.small``;
     const Time1=styled.span``;
     const TimeTag=styled.div``;
-    const TimeImage=styled.img``;
+    const TimeImage=styled.img`
+    width: 100%;
+    display: block;
+    `;
     const Time2=styled.small``;
 
 
@@ -683,12 +719,12 @@ const HeaderContainer=styled.div`
 
     const RightContainer=styled.div`
     position: absolute;
-    top: 0%;
+    top: 20%;
     right: 5%;
     bottom: 0%;
     height:80px;
     width:25%;
-    padding-top:200px;
+
     `;
     const Background=styled.div`
   
