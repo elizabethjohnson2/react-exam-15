@@ -838,20 +838,4 @@ grid-area: 2 / 7 / 5 / 10;
     border-radius:15px;
     display:block;
     `;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default Demo
