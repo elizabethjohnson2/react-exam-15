@@ -377,6 +377,9 @@ const GridMain = styled.div`
 `;
 const SideBar = styled.div`
     grid-area: 1 / 1 / 5 / 3;
+    @media all and (max-width:640px){
+        
+    }
 
 `;
 const Header = styled.div`
@@ -411,11 +414,17 @@ grid-area: 2 / 7 / 5 / 10;
     border-bottom:1px solid #727488;
     width: 100%;
     margin-top:20px;
+     @media all and(max-width:1380px){
+        width:70px;
+    }
 
     `;
  const LinkImageContainer=styled(Link)`
     padding-right: 500px;
     width:40px;
+     @media all and(max-width:1380px){
+        margin-left:55px;
+    }
     `;
  const LogoImage=styled.img`
     display: block;
@@ -432,7 +441,12 @@ grid-area: 2 / 7 / 5 / 10;
    width:40%;
    align-items:center;
    justify-content:space-between;
+   @media all and(max-width:1380px){
+    width:74%;
+
+   }
    `;
+      
  const StateImage=styled.img`
     width: 100%; 
      height: 50%; 
@@ -485,12 +499,19 @@ grid-area: 2 / 7 / 5 / 10;
     display: flex;
     justify-content: space-between;
     padding-top:20px;
+     @media all and(max-width:1380px){
+        padding-top:32px;
+    }
     `;
     const FrameImage=styled.img`
     width: 45%;
     height: 80%;
     display: flex;
     border-radius: 50%;
+    @media all and(max-width:1380px){
+        width:42%;
+        height:59%;
+    }
     `;
     const TagImage=styled.img`
      width:21%;
@@ -561,6 +582,10 @@ grid-area: 2 / 7 / 5 / 10;
     padding-right:20px;
     height:117px;
     border-radius:10px;
+    @media all and(max-width:1380px){
+        margin-left:54px;
+
+    }
     `;
     const Number=styled.div`
      display:flex;
@@ -615,6 +640,7 @@ grid-area: 2 / 7 / 5 / 10;
      padding-top:40px;
      padding-left:70px;
     
+    
     `;
     const RecentName=styled.small`
      font-size:30px;
@@ -625,6 +651,9 @@ grid-area: 2 / 7 / 5 / 10;
     const LeftBar=styled.div`
      padding-top:47px;
      margin-left:25px;
+     @media all and(max-width:1280){
+        padding-left:80px;
+     }
     `;
     const ImageBares=styled.div`
      margin-left:-30px;

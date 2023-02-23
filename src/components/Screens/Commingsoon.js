@@ -118,16 +118,23 @@ const HeaderContainer=styled.div`
     border-bottom:1px solid #727488;
     width: 100%;
     margin-top:20px;
+    @media all and(max-width:1380px){
+        width:70px;
+    }
 
     `;
     const LinkImageContainer=styled(Link)`
     padding-right: 500px;
     width:40px;
+    @media all and(max-width:1380px){
+        margin-left:55px;
+    }
     
     `;
     const LogoImage=styled.img`
     display: block;
     width:100%;
+ 
    `;
    const Images =styled.div`
    width:20%;
@@ -140,6 +147,10 @@ const HeaderContainer=styled.div`
    width:40%;
    align-items:center;
    justify-content:space-between;
+   @media all and(max-width:1380px){
+    width:74%;
+
+   }
   
   
   
@@ -205,12 +216,19 @@ const HeaderContainer=styled.div`
     display: flex;
     justify-content: space-between;
     padding-top:20px;
+    @media all and(max-width:1380px){
+        padding-top:32px;
+    }
     `;
     const FrameImage=styled.img`
     width: 45%;
     height: 80%;
     display: flex;
     border-radius: 50%;
+    @media all and(max-width:1380px){
+        width:42%;
+        height:59%;
+    }
     `;
     const TagImage=styled.img`
      width:21%;

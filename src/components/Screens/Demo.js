@@ -118,11 +118,18 @@ const HeaderContainer=styled.div`
     border-bottom:1px solid #727488;
     width: 100%;
     margin-top:20px;
+    @media all and(max-width:1281px){
+        width:50px;
+        margin-left: 43px;
+    }
 
     `;
     const LinkImageContainer=styled(Link)`
     padding-right: 500px;
     width:40px;
+    @media all and(max-width:1380px){
+        margin-left:55px;   
+    }
     
     `;
     const LogoImage=styled.img`
@@ -140,9 +147,10 @@ const HeaderContainer=styled.div`
    width:40%;
    align-items:center;
    justify-content:space-between;
-  
-  
-  
+   @media all and(max-width:1380px){
+    width:74%;
+
+   }
    `;
     const StateImage=styled.img`
      width: 100%; 
@@ -150,9 +158,6 @@ const HeaderContainer=styled.div`
     display: flex;
     border-radius: 50%;
     /* margin-right: 90px; */
-    
-   
-    
    `;
     const StateName=styled.span`
     font-size:15px;
@@ -167,15 +172,13 @@ const HeaderContainer=styled.div`
     align-items:center;
     justify-content:space-between;
     /* margin-left:10px; */
-    width:40%;
-    
+    width:40%; 
     `;
     const ArrowImage=styled.img`
      /* margin-right:10px; */
     display:flex;
     width: 100%;
     height:60%;
-
     `;
     
     const ArrowName=styled.p`
@@ -205,13 +208,22 @@ const HeaderContainer=styled.div`
     display: flex;
     justify-content: space-between;
     padding-top:20px;
+    @media all and(max-width:1380px){
+        padding-top:32px;
+    }
     `;
     const FrameImage=styled.img`
     width: 45%;
     height: 80%;
     display: flex;
     border-radius: 50%;
+    @media all and(max-width:1380px){
+        width:42%;
+        height:59%;
+    }
     `;
+      
+     
     const TagImage=styled.img`
      width:21%;
     display: flex;
